@@ -1,15 +1,20 @@
 package ticketing;
 
+/**
+ * @author ishandikshit
+ * Class created to contain the information related to a seat unit.
+ */
 public class Seat {
 	int row;
 	int column;
 	boolean isAccessible;
 
-	public Seat(int row, int col, boolean isAccessible){
-		this.row=row;
-		this.column=col;
-		this.isAccessible=isAccessible;
+	public Seat(int row, int col, boolean isAccessible) {
+		this.row = row;
+		this.column = col;
+		this.isAccessible = isAccessible;
 	}
+
 	public int getRow() {
 		return row;
 	}
