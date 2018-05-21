@@ -24,6 +24,10 @@ Design a ticketing system that mainly helps a user perform these functions:
 * Start the application<br>
 ```mvn exec:java -Dexec.mainClass="ticketing.App"```
 
+## Assumptions:
+* Capacity of the venue is 40X10 = 400 seats
+* The venue is like a movie theatre where it is preferred to sit farther from the screen.
+
 ## Application Walkthrough
 * **The Home Menu:** This menu will be available after each operation.
 
