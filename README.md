@@ -52,6 +52,10 @@ Assuming it to be a movie theatre, the algorithm will smartly find the farthest 
 
 ![screen shot 2018-05-21 at 2 01 15 am](https://user-images.githubusercontent.com/21368799/40299442-1c0da680-5c9b-11e8-9143-2595f81ad407.png)
 
+* **Hold Timed_Out**: If 20 or more seconds are passed between holding the seats and reserving them.
+
+![screen shot 2018-05-21 at 3 23 02 am](https://user-images.githubusercontent.com/21368799/40303165-902de1b4-5ca6-11e8-9c6c-a1bb1c5654a6.png)
+
 * **Seat Map**: After booking 8, 32, 12, 16 seats successively
 
 ![screen shot 2018-05-21 at 2 13 12 am](https://user-images.githubusercontent.com/21368799/40299959-bbe221c6-5c9c-11e8-9801-a9518a17715d.png)
@@ -64,9 +68,9 @@ Assuming it to be a movie theatre, the algorithm will smartly find the farthest 
 ## Important Algorithms
 #### 1. Picking Up Best Seats
 * The intuition here is to follow below rules in order of preference:
-1. All the seats should be together.
-2. Seats should be far from the screen.
-3. Seats should be as near to center as possible.
+	1. All the seats should be together.
+	2. Seats should be far from the screen.
+	3. Seats should be as near to center as possible.
 * The algorithm keeps track of seats filled in each row using two pointers (left and right)
 * Code Snippet
 ```java
@@ -111,7 +115,7 @@ public SeatHold findAndHoldSeats(int numSeats, String customerEmail) {
  }
 ```
 
-#### Holding seats for a particular time interval
+#### 2. Holding seats for a particular time interval
 * A new thread is created everytime a user tries to book a seat until 20 seconds or a reservation is made.
 * Code Snippet
 ```java
