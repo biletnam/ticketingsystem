@@ -52,6 +52,10 @@ Assuming it to be a movie theatre, the algorithm will smartly find the farthest 
 
 ![screen shot 2018-05-21 at 2 01 15 am](https://user-images.githubusercontent.com/21368799/40299442-1c0da680-5c9b-11e8-9143-2595f81ad407.png)
 
+* **Hold Timed_Out**: If 20 or more seconds are passed between holding the seats and reserving them.
+
+![screen shot 2018-05-21 at 3 23 02 am](https://user-images.githubusercontent.com/21368799/40303165-902de1b4-5ca6-11e8-9c6c-a1bb1c5654a6.png)
+
 * **Seat Map**: After booking 8, 32, 12, 16 seats successively
 
 ![screen shot 2018-05-21 at 2 13 12 am](https://user-images.githubusercontent.com/21368799/40299959-bbe221c6-5c9c-11e8-9801-a9518a17715d.png)
