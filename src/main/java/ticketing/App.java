@@ -46,11 +46,14 @@ public class App {
 			case 2: // FIND AND HOLD SEATS
 				System.out.println("Number of seats to book: ");
 				int numSeats = scannerInt.nextInt();
+				if (numSeats<=40){
 				System.out.println("Your email address please: ");
 				customerEmail = scannerStr.nextLine();
 				heldseats = ti.findAndHoldSeats(numSeats, customerEmail);
 				hold = ti.createHoldThread(heldseats, reserveDecision, customerEmail); // Create a new thread to start HELD seat timer
-				hold.start();
+				hold.start();}
+				else
+					System.out.println("Sorry you can book a maximum of 40 seats at a time");
 				continue;
 			
 			case 3: // CHECK YOUR RESERVATION
