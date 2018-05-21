@@ -64,9 +64,9 @@ Assuming it to be a movie theatre, the algorithm will smartly find the farthest 
 ## Important Algorithms
 #### 1. Picking Up Best Seats
 * The intuition here is to follow below rules in order of preference:
-1. All the seats should be together.
-2. Seats should be far from the screen.
-3. Seats should be as near to center as possible.
+	1. All the seats should be together.
+	2. Seats should be far from the screen.
+	3. Seats should be as near to center as possible.
 * The algorithm keeps track of seats filled in each row using two pointers (left and right)
 * Code Snippet
 ```java
@@ -111,7 +111,7 @@ public SeatHold findAndHoldSeats(int numSeats, String customerEmail) {
  }
 ```
 
-#### Holding seats for a particular time interval
+#### 2. Holding seats for a particular time interval
 * A new thread is created everytime a user tries to book a seat until 20 seconds or a reservation is made.
 * Code Snippet
 ```java
